@@ -23,13 +23,17 @@ const audioPlayer: AudioPlayer = {
 const { song:anotherSong, AudioVolume:volume, songDuration:duration } = audioPlayer;
 const { author:author, year:year } = audioPlayer.details;
 
-console.log('Song', anotherSong);
-console.log('Volume', volume);
-console.log('Duration', duration);
+console.log('Song', anotherSong + 'Volume', volume +'Duration', duration + 'Author', author + 'Year', year);
 
+// const dbz: string[] = ['Goku', 'Vegeta', 'Trunks'];
+// const [ p1, p2, p3 ] = dbz;
+// console.log('Personaje 1:', p1);
+// console.log('Personaje 2:', p2);
+// console.log('Personaje 3:', p3);
 
-console.log('Author', author);
-console.log('Year', year);
+const [ , , p3t = 'Not Found' ]: string[] = ['Goku', 'Vegeta'];
+
+console.log('Personaje 3:', p3t);
 
 
 export {};
